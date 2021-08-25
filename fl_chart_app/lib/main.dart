@@ -2,7 +2,7 @@ import 'package:fl_chart_app/resources/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'pages/home_page.dart';
+import 'pages/editor/editor.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,11 +16,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         textTheme: GoogleFonts.assistantTextTheme(
-          Theme.of(context).textTheme,
+          Theme.of(context).accentTextTheme,
         ),
         scaffoldBackgroundColor: AppColors.background,
       ),
-      home: HomePage(),
+      home: EditorPage(),
     );
   }
 }
