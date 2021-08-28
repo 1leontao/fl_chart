@@ -188,11 +188,12 @@ class RadarChartPainter extends BaseChartPainter<RadarChartData> {
         centerY + threshold * radius * yAngle,
       );
       canvasWrapper.translate(featureOffset.dx, featureOffset.dy);
-      canvasWrapper.rotate(angle * index);
+      canvasWrapper.rotate(0);
 
       canvasWrapper.drawText(
         _titleTextPaint,
-        Offset.zero - Offset(_titleTextPaint.width / 2, _titleTextPaint.height / 2),
+        Offset.zero -
+            Offset(_titleTextPaint.width / 2, _titleTextPaint.height / 2),
       );
       canvasWrapper.restore();
     }
